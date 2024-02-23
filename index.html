@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Project 2.0</title>
+</head>
+
+<style>
+
+html,body { 
+    margin:0;
+    padding:0;
+}
+header { 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    color: rgb(65, 63, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-image: url("https://i.postimg.cc/Vvxbf63P/pexels-min-an-752842.png");
+    background-size: cover;
+}
+ 
+#logo {
+    padding-left: 50px;
+    color: rgb(65, 63, 61);
+    font-size: 50px;
+}
+h1{
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+    padding-right: 100px;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+.nav_links li a {
+    text-decoration: none;
+    color: rgb(65, 63, 61);
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+#wedding {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#to_remember {
+    padding: 50px;
+    background-color: #b2bda0;
+    color: rgb(255, 255, 255);
+}
+#to_remember h1 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(92, 91, 88);
+}
+#to_remember p {
+    text-align: center;
+    color: white;
+}
+
+#rsvp {
+    padding: 40px; 
+    background-color: #EBEFE3;
+    text-align: center;
+    color: rgb(65, 63, 61);
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+#rsvp h1 {  
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}    
+#about {
+    background-color: #EBEFE3;
+    margin:0;
+    padding: 1px; 
+    text-align: center;
+    color: rgb(65, 63, 61);
+}
+#about h1 { 
+    font-size: 80px;
+    font-style: oblique;
+    padding: 1px;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+#about h2 {
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: lighter;
+    margin: 0;
+    padding: 40px;
+}
+#about h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+#to_remember {
+    position: relative;
+    text-align: center;
+}
+
+#flower {
+    display: inline-block;
+    margin: 0 ; 
+    height: 400px;
+    width: 400px;
+}
+#rsvpname {
+    font-size: 20px;
+}
+#name {
+    padding: 10px;
+    border-radius: 25px;
+    border: #b2bda0 1px solid;
+}
+.rsvpchoice {
+    padding: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+#thanks {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 30px;
+}   
+
+#namee {
+    padding: 20px;
+}
+</style>
+ 
+<body>
+    <header>
+        <u><h1 id="logo">M&D</h1></u>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#about">  ABOUT  </a></li>
+                <li><a href="#to_remember">  TO REMEMBER  </a></li>
+                <li><a href="#rsvp">  RSVP  </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pic">
+        <img id="wedding" src="https://i.postimg.cc/x8YC7gK9/pexels-min-an-752842.jpg" alt="">
+    </section>
+    <section id="about">
+        <h1>9.18.2024</h1>
+        <h2>― Michael & Diane ―</h2>
+        <h3>Save the Date</h3>
+    </section>
+    <section id="to_remember">
+        <img id="flower" src="https://i.postimg.cc/LscLR3Ys/Pngtree-white-rose-watercolor-wedding-flower-6690705.png" alt="">
+        <h1>― THE CEREMONY ―</h1>
+            <p>The ceremony begins at 2:00pm</p>
+            <p>The Manor at Camp John Hay</p>
+            <p>4 South Dr, Camp John Hay</p>
+            <br>
+        <h1>― RECEPTION TO FOLLOW ―</h1>
+            <p>at 6:30pm</p>
+            <p>The Cozy Cove</p>
+            <p>Mountain Lodge, 27 Leonard Wood Rd</p>
+            <br>
+        <h1>― WHAT TO WEAR ―</h1>
+            <p>Shades of Green</p>
+            <p>White</p>
+            <br>
+    </section>
+
+    <section id="rsvp">
+        <h1>― RSVP ―</h1>
+        <p>Kindly reply by August 18</p>
+        <div id="namee">
+		<label id="rsvpname">
+			<i>Name</i>
+			<input  placeholder="name" id="name" type="text" required>
+		</label>
+    </div>
+        <div class="rsvpchoice">
+            <div>
+                <label><input type="radio" name="choice" value="yes"/>Accept with pleasure</label>
+            </div>
+            <br>
+
+            <div>
+                <label><input type="radio" name="choice" value="no"/>Decline with regret</label>
+            </div>
+        </div>
+        <div>
+            <input type="button" value="Submit">
+        <p id="thanks">Thank You!~</p>
+    </div>
+    </section>
+
+</body> 
+</html> 
